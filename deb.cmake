@@ -1,6 +1,6 @@
 set(_VERSION_MAJOR 1)
 set(_VERSION_MINOR 1)
-set(_VERSION_PATCH 0)
+set(_VERSION_PATCH 1)
 
 set(CPACK_GENERATOR "DEB")
 
@@ -63,6 +63,7 @@ add_custom_target(changelog ALL DEPENDS "${CMAKE_BINARY_DIR}/changelog.gz")
 
 install(FILES ${CMAKE_BINARY_DIR}/dde-globalmenu-service DESTINATION /usr/bin/)
 install(FILES ${CMAKE_SOURCE_DIR}/dde-globalmenu-service.desktop DESTINATION /usr/share/applications)
+install(FILES ${CMAKE_SOURCE_DIR}/dde-globalmenu-service.desktop DESTINATION /etc/xdg/autostart/)
 
 
 # 最后把我们的changelog等东西也加进来，project是你的工程名
