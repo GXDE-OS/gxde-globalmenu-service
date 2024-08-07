@@ -1,4 +1,4 @@
-dde-globalmenu-service (1.1.0gxde1) UNRELEASED; urgency=medium
+gxde-globalmenu-service (1.1.0gxde1) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
   * 

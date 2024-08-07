@@ -12,10 +12,10 @@ set(CPACK_PACKAGE_VERSION_MINOR "${_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${_VERSION_PATCH}")
 
 # 设置安装包的包名，打好的包将会是packagename-version-linux.debian，如果不设置，默认是工程名
-set(CPACK_PACKAGE_NAME "dde-globalmenu-service")
+set(CPACK_PACKAGE_NAME "gxde-globalmenu-service")
 
 # 设置程序名，就是程序安装后的名字
-set(CPACK_DEBIAN_PACKAGE_NAME "dde-globalmenu-service")
+set(CPACK_DEBIAN_PACKAGE_NAME "gxde-globalmenu-service")
 
 # 设置架构
 set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
@@ -61,9 +61,9 @@ add_custom_command(
 
 add_custom_target(changelog ALL DEPENDS "${CMAKE_BINARY_DIR}/changelog.gz")
 
-install(FILES ${CMAKE_BINARY_DIR}/dde-globalmenu-service DESTINATION /usr/bin/)
-install(FILES ${CMAKE_SOURCE_DIR}/dde-globalmenu-service.desktop DESTINATION /usr/share/applications)
-install(FILES ${CMAKE_SOURCE_DIR}/dde-globalmenu-service.desktop DESTINATION /etc/xdg/autostart/)
+install(FILES ${CMAKE_BINARY_DIR}/gxde-globalmenu-service DESTINATION /usr/bin/)
+install(FILES ${CMAKE_SOURCE_DIR}/gxde-globalmenu-service.desktop DESTINATION /usr/share/applications)
+install(FILES ${CMAKE_SOURCE_DIR}/gxde-globalmenu-service.desktop DESTINATION /etc/xdg/autostart/)
 
 
 # 最后把我们的changelog等东西也加进来，project是你的工程名
