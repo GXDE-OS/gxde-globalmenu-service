@@ -1,0 +1,21 @@
+Source: dde-globalmenu-service
+Section: utils
+Priority: optional
+Maintainer: SeptemberHX, gfdgd_xi <3025613752@qq.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ git, 
+ cmake, 
+ g++, 
+ extra-cmake-modules, 
+ libxcb-util-dev
+Standards-Version: 4.6.2
+Homepage: https://gitee.com/GXDE-OS/dde-globalmenu-service
+
+Package: dde-globalmenu-service
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: DDE Global Menu Service Daemon
