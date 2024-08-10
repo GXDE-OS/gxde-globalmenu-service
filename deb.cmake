@@ -63,7 +63,7 @@ add_custom_target(changelog ALL DEPENDS "${CMAKE_BINARY_DIR}/changelog.gz")
 
 install(FILES ${CMAKE_BINARY_DIR}/gxde-globalmenu-service DESTINATION /usr/bin/)
 install(FILES ${CMAKE_SOURCE_DIR}/gxde-globalmenu-service.desktop DESTINATION /usr/share/applications)
-install(FILES ${CMAKE_SOURCE_DIR}/gxde-globalmenu-service.desktop DESTINATION /etc/xdg/autostart/)
+#install(FILES ${CMAKE_SOURCE_DIR}/gxde-globalmenu-service.desktop DESTINATION /etc/xdg/autostart/)
 
 
 # 最后把我们的changelog等东西也加进来，project是你的工程名
