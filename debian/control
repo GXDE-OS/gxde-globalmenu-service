@@ -8,8 +8,23 @@ Build-Depends:
  git, 
  cmake, 
  g++, 
+ qtbase5-dev,
  extra-cmake-modules, 
- libxcb-util-dev
+ libxcb-util-dev, 
+ cmake,
+ g++, 
+ libqt5x11extras5-dev, 
+ libqt5svg5-dev, 
+ libdtkwidget-dev, 
+ libdtkcore-dev, 
+ libdtkcore5-bin,
+ libdframeworkdbus-dev, 
+ libgsettings-qt-dev,
+ qttools5-dev,
+ libkf5windowsystem-dev, 
+ libxcb-ewmh-dev, 
+ libxdo-dev,
+ pkg-config
 Standards-Version: 4.6.2
 Homepage: https://gitee.com/GXDE-OS/gxde-globalmenu-service
 
