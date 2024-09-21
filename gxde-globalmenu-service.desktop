@@ -4,4 +4,3 @@ Exec=/usr/bin/gxde-globalmenu-service
 Name=GXDE-GlobalMenu-service
 NoDisplay=true
 Type=Application
-X-GNOME-Autostart-enabled=true

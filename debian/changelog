@@ -1,7 +1,5 @@
-gxde-globalmenu-service (1.1.0gxde2) UNRELEASED; urgency=medium
+gxde-globalmenu-service (1.1.0gxde3) UNRELEASED; urgency=medium
 
   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
-  * 
-  * 
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 10 Aug 2024 16:15:15 +0800
+ -- gfdgd_xi <3025613752@qq.com>  Sat, 21 Sep 2024 21:03:08 +0800
