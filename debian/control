@@ -26,7 +26,8 @@ Build-Depends:
  libxcb-ewmh-dev, 
  libxdo-dev,
  pkg-config,
- libkf5coreaddons-dev
+ libkf5coreaddons-dev,
+ libkf5config-dev
 Standards-Version: 4.6.2
 Homepage: https://gitee.com/GXDE-OS/gxde-globalmenu-service
 
