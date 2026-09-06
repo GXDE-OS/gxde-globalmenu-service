@@ -1,9 +1,12 @@
-gxde-globalmenu-service (1.1.0gxde3-1) UNRELEASED; urgency=medium
+gxde-globalmenu-service (1.1.0gxde3-2) UNRELEASED; urgency=medium
 
   [ gfdgd_xi ]
   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
   [ CharOfString ]
   * Remove unused build dependencies and normalize package metadata.
+  * Preserve SeptemberHX as an uploader with a complete email address.
+  * Remove unused DTK, DFrameworkDBus, and QGSettings build
+    dependencies; the service only links Qt5, KF5, and XCB.
 
- -- CharOfString <root@charofstring.cc>  Sun, 06 Sep 2026 17:18:42 -0500
+ -- CharOfString <root@charofstring.cc>  Sun, 06 Sep 2026 18:03:03 -0500
