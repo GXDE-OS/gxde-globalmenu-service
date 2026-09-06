@@ -2,6 +2,7 @@ Source: gxde-globalmenu-service
 Section: utils
 Priority: optional
 Maintainer: gfdgd_xi <3025613752@qq.com>
+Uploaders: SeptemberHX <september_hx@outlook.com>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
