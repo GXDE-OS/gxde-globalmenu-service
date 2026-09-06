@@ -1,7 +1,7 @@
 Source: gxde-globalmenu-service
 Section: utils
 Priority: optional
-Maintainer: SeptemberHX, gfdgd_xi <3025613752@qq.com>
+Maintainer: gfdgd_xi <3025613752@qq.com>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -15,11 +15,6 @@ Build-Depends:
  g++, 
  libqt5x11extras5-dev, 
  libqt5svg5-dev, 
- libdtkwidget-dev, 
- libdtkcore-dev, 
- libdtkcore5-bin,
- libdframeworkdbus-dev, 
- libgsettings-qt-dev,
  qttools5-dev,
  libkf5windowsystem-dev, 
  libxcb1-dev,
