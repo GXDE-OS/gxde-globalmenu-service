@@ -1,5 +1,9 @@
-gxde-globalmenu-service (1.1.0gxde3) UNRELEASED; urgency=medium
+gxde-globalmenu-service (1.1.0gxde3-1) UNRELEASED; urgency=medium
 
+  [ gfdgd_xi ]
   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 
- -- gfdgd_xi <3025613752@qq.com>  Sat, 21 Sep 2024 21:03:08 +0800
+  [ CharOfString ]
+  * Remove unused build dependencies and normalize package metadata.
+
+ -- CharOfString <root@charofstring.cc>  Sun, 06 Sep 2026 17:18:42 -0500
