@@ -1,0 +1,32 @@
+# Maintainer: CharOfString <root@charofstring.cc>
+pkgname=gxde-globalmenu-service-git
+pkgver=1.1.0gxde3
+pkgrel=2
+pkgdesc='Global menu (AppMenu registrar) service for GXDE'
+arch=('x86_64' 'aarch64')
+url="https://github.com/GXDE-OS/gxde-globalmenu-service"
+license=('GPL-3.0-or-later')
+depends=('qt5-base' 'qt5-x11extras' 'kwindowsystem5' 'kconfig5' 'kcoreaddons5' 'libxcb'
+         'libgcc' 'libstdc++' 'glibc')
+makedepends=('git' 'cmake' 'ninja' 'extra-cmake-modules' 'qt5-tools' 'qt5-svg' 'xcb-util'
+             'xcb-util-wm' 'xdotool')
+provides=('gxde-globalmenu-service')
+conflicts=('gxde-globalmenu-service')
+source=()
+sha512sums=()
+
+# 直接使用 PKGBUILD 所在的 git 仓库作为源码 ・ Build from the git checkout this PKGBUILD lives in.
+_srcroot() {
+  git -C "$startdir" rev-parse --show-toplevel
+}
+
+build() {
+  cmake -B build -S "$(_srcroot)" -GNinja \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  ninja -C build
+}
+
+package() {
+  DESTDIR="$pkgdir" ninja -C build install
+}
