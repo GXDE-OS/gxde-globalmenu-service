@@ -1,5 +1,5 @@
 # Maintainer: CharOfString <root@charofstring.cc>
-pkgname=gxde-globalmenu-service-git
+pkgname=gxde-globalmenu-service
 pkgver=1.1.0gxde3
 pkgrel=2
 pkgdesc='Global menu (AppMenu registrar) service for GXDE'
@@ -10,8 +10,9 @@ depends=('qt5-base' 'qt5-x11extras' 'kwindowsystem5' 'kconfig5' 'kcoreaddons5' '
          'libgcc' 'libstdc++' 'glibc')
 makedepends=('git' 'cmake' 'ninja' 'extra-cmake-modules' 'qt5-tools' 'qt5-svg' 'xcb-util'
              'xcb-util-wm' 'xdotool')
-provides=('gxde-globalmenu-service')
-conflicts=('gxde-globalmenu-service')
+provides=("gxde-globalmenu-service-git=$pkgver")
+conflicts=('gxde-globalmenu-service-git')
+replaces=('gxde-globalmenu-service-git')
 source=()
 sha512sums=()
 
